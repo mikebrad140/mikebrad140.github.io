@@ -1,32 +1,3 @@
 ## Blog Post 1: ST558 Comparison of Statistician to Data Scientist
 
-Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
-
-If the file does not start with a header, then the post title will be derived from the filename.
-
-This is a sample blog post. You can talk about all sorts of fun things here.
-
----
-
-### This is a header
-
-#### Some T-SQL Code
-
-```tsql
-SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
-    , REVERSE('abc')
-FROM dbo.SomeTable s
-    CROSS JOIN dbo.OtherTable o;
-```
-
-#### Some PowerShell Code
-
-```powershell
-Write-Host "This is a powershell Code block";
-
-# There are many other languages you can use, but the style has to be loaded first
-
-ForEach ($thing in $things) {
-    Write-Output "It highlights it using the GitHub style"
-}
-```
+Data scientists and statisticians share similarities in that both involve working with data and applying statistical techniques. However, data scientists often have a broader skill set that encompasses programming, machine learning, and big data technologies. Data scientists tend to focus on extracting actionable insights from data to drive decision-making, while statisticians typically emphasize the design of experiments and the development of statistical methodologies.
