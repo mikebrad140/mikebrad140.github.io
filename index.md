@@ -1,5 +1,5 @@
-Here you can say lots of fun things about your site.
+Musings on Life, Statisitics, and Fatherhood
 
-Maybe say a some things about yourself.
+I am a full-time data analyst at RTI international, part-time graduate student at NCSU, and Dad of two wonderful girls.
 
-Or maybe what you plan to blog about.
+
