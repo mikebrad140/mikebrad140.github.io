@@ -18,9 +18,9 @@ In my professional journey, I am pursuing a graduate degree in statistics at NCS
 Being a father is one of the most rewarding and fulfilling roles in my life. My two girls bring immense joy to our family. Recently, we had an amazing trip to Disney World. It was a magical experience to witness their excitement and wonder.
 
 Here's a picture at our recent trip to Disney World:  
-<img src="https://github.com/mikebrad140/mikebrad140.github.io/blob/main/_posts/image0%20(2).jpeg" alt="Disney World" width="300" height="400">
+![image0 (2)](https://github.com/mikebrad140/mikebrad140.github.io/assets/62396052/0e4c4274-56ce-48c9-967c-3a5169c68e7c)
 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dfamily%2Bclip%2Bart&psig=AOvVaw3DMniEFpCaHvjFUFGLv0lh&ust=1685127255325000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLCo9K6Skf8CFQAAAAAdAAAAABAE" alt="Family" width="300" height="400">
+
 
 In this blog, I aim to share my insights and reflections on various aspects of life, statistics, and fatherhood. Some of the topics I plan to cover include:
 
