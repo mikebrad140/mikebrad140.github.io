@@ -1,7 +1,7 @@
 ---
-title: "Musings on Life, Statistics, and Fatherhood"
-author: "Your Name"
-date: "2023-05-25"
+Title: "Musings on Life, Statistics, and Fatherhood"
+Author: "Michael Bradshaw"
+Date: "2023-05-25"
 ---
 
 # Introduction
