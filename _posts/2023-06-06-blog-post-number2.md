@@ -4,7 +4,12 @@ Michael Bradshaw
 2023-06-06
 
 ``` r
-knitr::opts_chunk$set(fig.path = "C://Users//mbradshaw//OneDrive - Research Triangle Institute//Documents//Graduate School Courses//ST 558//Blog Update//mikebrad140.github.io//images/")
+rmarkdown::render(
+  input = "C://Users//mbradshaw//OneDrive - Research Triangle Institute//Documents//Graduate School Courses//ST 558//Blog Update//mikebrad140.github.io//_RMD//2023-06-06-blog-post-number2.Rmd",
+  output_format = "github_document",
+  output_dir = "C://Users//mbradshaw//OneDrive - Research Triangle Institute//Documents//Graduate School Courses//ST 558//Blog Update//mikebrad140.github.io//_posts",
+  output_options = list(keep_html = FALSE, html_preview=FALSE)
+)
 ```
 
 ## Thoughts on the R programming language.

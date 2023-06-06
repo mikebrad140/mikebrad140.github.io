@@ -4,10 +4,11 @@ author: "Michael Bradshaw"
 date: "`r Sys.Date()`" 
 ---
 
-```{r setup, include=TRUE}
-knitr::opts_chunk$set(fig.path = "C://Users//mbradshaw//OneDrive - Research Triangle Institute//Documents//Graduate School Courses//ST 558//Blog Update//mikebrad140.github.io//images")
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.path = "C://Users//mbradshaw//OneDrive - Research Triangle Institute//Documents//Graduate School Courses//ST 558//Blog Update//mikebrad140.github.io//images/")
 ```
-```{r createblog, eval=FALSE, echo=FALSE}
+
+```{r createblog, eval=FALSE, echo=TRUE}
 rmarkdown::render(
   input = "C://Users//mbradshaw//OneDrive - Research Triangle Institute//Documents//Graduate School Courses//ST 558//Blog Update//mikebrad140.github.io//_RMD//2023-06-06-blog-post-number2.Rmd",
   output_format = "github_document",
