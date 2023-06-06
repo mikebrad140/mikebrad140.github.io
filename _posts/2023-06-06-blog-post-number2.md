@@ -46,4 +46,4 @@ truly learn this language.
 
 You can also embed plots, for example:
 
-![](C://Users//mbradshaw//OneDrive%20-%20Research%20Triangle%20Institute//Documents//Graduate%20School%20Courses//ST%20558//Blog%20Update//mikebrad140.github.io//images/iris-1.png)<!-- -->
+![](../images/iris-1.png)<!-- -->
