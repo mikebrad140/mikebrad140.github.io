@@ -1,7 +1,7 @@
 ---
 title: "Blog 2: Programming Background"
 author: "Michael Bradshaw"
-date: "`r Sys.Date()`"
+date: "`r Sys.Date()`" 
 ---
 
 ```{r setup, include=TRUE}
