@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=TRUE}
-knitr::opts_chunk$set(fig.path = "C://Users//mbradshaw//OneDrive - Research Triangle Institute//Documents//Graduate School Courses//ST 558//Blog Update//mikebrad140.github.io//images/")
+knitr::opts_chunk$set(fig.path = "C://Users//mbradshaw//OneDrive - Research Triangle Institute//Documents//Graduate School Courses//ST 558//Blog Update//mikebrad140.github.io//images")
 ```
 ```{r createblog, eval=FALSE, echo=FALSE}
 rmarkdown::render(
