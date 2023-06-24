@@ -1,18 +1,87 @@
-Blog: Project 1 Review Blog
+Project 1 Review Blog:
 ================
 Michael Bradshaw
-2023-06-23
+2023-06-24
 
-### Explaining the project and interesting findings
+#### Explaining the project and interesting findings:
 
-### Reflecting on the process:
+This project involved contacting the Spoonacular API to pull recipe
+information based on our search criteria. Our functions allowed users to
+search recipes by query(keyword), cuisine, diet, ingredients we want to
+include, ingredients we want to exclude, how long the recipe takes to
+make, and the maximum number of recipes we want returned. The
+Spoonacular API’s extensive database of recipes and nutrition
+information allowed us to pull in detailed information about these
+recipes, like taste information, and nutrition information. The search
+queries allowed users to receive recipes that catered to individual
+culinary tastes and dietary restrictions.
+
+After contacting different parts of the Spoonacular API and returning
+the parsed data based on our search criteria, we combined our returned
+data and created a dataset that allowed us to perform exploratory data
+analysis on our recipes. First, we created a couple of new variables
+including a made-up “Yummy Score” and a Yummy Categorical variable based
+on the recipes “Yummy Score”. Then we looked at summary tables for
+different variables to better understand differences and similarities in
+our search results among key variables. Finally, we created five plots
+to further examine distributions and relationships between our recipe
+characteristics.
+
+One interesting finding was looking at relationships between variables
+based on their Yummy Category. I was surprised that super yummy recipes
+had lower fat content that the other yummy categories. Additionally, I
+thought it interesting that there were such few vegetarian options. I
+suppose that excluding tomatoes from our search criteria could have
+contributed to this lack of vegetarian options in our returned query.
+
+#### Reflecting on the process:
+
+The process of producing the code and analysis was a valuable learning
+experience, especially working with an API. Learning to interact with an
+API in R via a PowerPoint presentation is one thing, but actually
+applying that knowledge in practice often presents different challenges.
+I learned the importance of understanding the API documentation and
+learning about the available endpoints. Additionally, this process of
+applying API specific knowledge in practice requires trial and error,
+problem-solving, and adapting to specific API nuances (like search
+limits), which was not discussed in the our notes.
 
 #### Most difficult part of the logic and programming for you?
 
+The most challenging part for me was integrating the Spoonacular API
+effectively into the project. Understanding the API documentation,
+retrieving and parsing the required data, and implementing the necessary
+functionality required a lot of browsing the API documentation resources
+and a bit of trial and error. Additionally, each query of the
+Spoonacular API costs points and the API sets a cap on the number of
+points available to free users per day. I was also not familiar with how
+to effectively use the unlist() command to take lists and create a
+single variable from a long list. For example, cuisine and diet both
+returned lists from the API.
+
 #### What would I do differently in approaching a similar project in the future?
 
-[Link to github pages
-repo:](https://github.com/mikebrad140/ST558---Project-1)
+There seems to be a wide variety in the available API documentation
+online. Before getting into the data, I think it would be important to
+spend more time understanding the structure of the API and think how
+best to integrate the returned data into a suitable dataset for
+analysis. This would help me plan the project more effectively and avoid
+potential roadblocks or inefficiencies during implementation.
 
-[Link to Project 1 non-github pages
-site:](https://mikebrad140.github.io/ST558---Project-1/)
+Finally, I would have explored additional ways to personalize the recipe
+search queries even further. Expanding the scope of personalization
+would make the system even more valuable to users with diverse needs and
+dietary preferences.
+
+#### Final thoughts:
+
+Through this project, I gained valuable knowledge and experience,
+expanding my understanding of API integration in R and honing my
+problem-solving skills. I am better equipped to tackle similar projects
+more effectively in the future.
+
+[Link to my ST558 Project 1 github pages
+repo](https://github.com/mikebrad140/ST558---Project-1)
+
+[Link to my ST558 Project 1 non-github pages
+site](https://mikebrad140.github.io/ST558---Project-1/)
