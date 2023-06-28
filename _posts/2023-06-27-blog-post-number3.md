@@ -63,7 +63,8 @@ RegressionList_Example <- function(dataset, response, predictors) {
 # Create an empty list to store the results of all the models
 models_list <- list()
 
-# Run multiple linear regression models on the iris dataset and store the results one by one into our models_list list object.
+# Run multiple linear regression models on the iris dataset and store the results 
+# one by one into our models_list list object.
 models_list$model1 <- RegressionList_Example(iris, "Sepal.Width",
                                              c("Sepal.Length", "Petal.Length"))
 models_list$model2 <- RegressionList_Example(iris, "Sepal.Width", 
