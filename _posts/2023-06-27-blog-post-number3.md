@@ -41,7 +41,8 @@ iris dataset.**
 data(iris)
 RegressionList_Example <- function(dataset, response, predictors) {
   # Fit linear regression model
-  model_lm <- lm(formula(paste(response, "~", paste(predictors, collapse = "+"))), data = dataset)
+  model_lm <- lm(formula(paste(response, "~", paste(predictors, collapse = "+"))), 
+                 data = dataset)
   
   # model coefficients, p-values, and R-squared
   coef_lm <- coef(model_lm)
@@ -63,8 +64,10 @@ RegressionList_Example <- function(dataset, response, predictors) {
 models_list <- list()
 
 # Run multiple linear regression models on the iris dataset and store the results one by one into our models_list list object.
-models_list$model1 <- RegressionList_Example(iris, "Sepal.Width", c("Sepal.Length", "Petal.Length"))
-models_list$model2 <- RegressionList_Example(iris, "Sepal.Width", c("Petal.Length", "Petal.Width"))
+models_list$model1 <- RegressionList_Example(iris, "Sepal.Width",
+                                             c("Sepal.Length", "Petal.Length"))
+models_list$model2 <- RegressionList_Example(iris, "Sepal.Width", 
+                                             c("Petal.Length", "Petal.Width"))
 
 # Accessing a list example: showing model parameters and p-values from model1
 models_list$model1$model
@@ -79,8 +82,8 @@ models_list$model1$p_values
     ##  (Intercept) Sepal.Length Petal.Length 
     ## 4.308316e-04 1.163254e-14 9.429194e-21
 
-**This examples shows how to store pieces of the RegressionList_Example
+This examples shows how to store pieces of the *RegressionList_Example*
 function from a single linear model into a list. For multiple models,
 you can then store multiple list results into a single list. Note that
 you could extend this example to perform additional analyses or
-comparisons based on the stored results in the models_list list.**
+comparisons based on the stored results in the *models_list* list.
