@@ -1,0 +1,65 @@
+---
+title: "Blog 3: Coolest thing you've learned about programming in R"
+author: "Michael Bradshaw"
+date: "`r Sys.Date()`" 
+---
+
+```{r setup, eval=TRUE, echo=FALSE}
+knitr::opts_chunk$set(fig.path = "../images/")
+```
+
+```{r createblog, eval=FALSE, echo=FALSE}
+rmarkdown::render(
+  input = "C://Users//mbradshaw//OneDrive - Research Triangle Institute//Documents//Graduate School Courses//ST 558//Blog Update//mikebrad140.github.io//_RMD//2023-06-27-blog-post-number3.Rmd",
+  output_format = "github_document",
+  output_dir = "C://Users//mbradshaw//OneDrive - Research Triangle Institute//Documents//Graduate School Courses//ST 558//Blog Update//mikebrad140.github.io//_posts",
+  output_options = list(keep_html = FALSE, html_preview=FALSE)
+)
+```  
+## Cool things in R:
+From my experience programming  with R, one of the most powerful aspects of R is the list object. Vectors are used to contain multiple items of the same data type, but lists can store multiple items of any kind of data type. For example, the first element of a list could be a vector, the second element could be a data frame, and the third element could be a matrix. One of the main advantages is that lists are highly flexible to complex data relationships (i.e real-world data scenarios).
+
+R has built in helper functions that help us efficiently work with lists. For example, the apply functions (i.e. lapply()) allow you to perform operations like applying a function (calculate the mean, sd, etc.) to each element of a list.
+
+You can make an empty list, which is useful when you want to add to a list incrementally.In R, you create an empty list using the list() function, and then add elements to it one by one. Lastly, if you already have a list and want to extract the individual elements, you can use the unlist() function. This flattens out a list into a vector of values of its individual elements.
+
+Finally, an efficient way for our custom functions to return multiple objects is by returning a list. For example, if we were running multiple linear regression models and want to return the different results of each model run (which model was run, coefficients,  p-values, R-squared) we could return a list. By returning a list, we ensure that we have a structured and coherent way of storing and handling the multiple objects produced by our function. It also helps us understand what information was processed. 
+
+**Now, let's show a brief example of lists in action using the built in iris dataset.**
+
+```{r ReturnList, echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+data(iris)
+RegressionList_Example <- function(dataset, response, predictors) {
+  # Fit linear regression model
+  model_lm <- lm(formula(paste(response, "~", paste(predictors, collapse = "+"))), data = dataset)
+  
+  # model coefficients, p-values, and R-squared
+  coef_lm <- coef(model_lm)
+  p_values_lm <- summary(model_lm)$coefficients[, 4]
+  r_squared_lm <- summary(model_lm)$r.squared
+  
+  # Create a list to store the results
+  lm_results <- list(
+    model = paste(response, "~", paste(predictors, collapse = "+")),
+    coefficients = coef_lm,
+    p_values = p_values_lm,
+    r_squared = r_squared_lm
+  )
+  
+  return(lm_results)
+}
+
+# Create an empty list to store the results of all the models
+models_list <- list()
+
+# Run multiple linear regression models on the iris dataset and store the results one by one into our models_list list object.
+models_list$model1 <- RegressionList_Example(iris, "Sepal.Width", c("Sepal.Length", "Petal.Length"))
+models_list$model2 <- RegressionList_Example(iris, "Sepal.Width", c("Petal.Length", "Petal.Width"))
+
+# Accessing a list example: showing model parameters and p-values from model1
+models_list$model1$model
+models_list$model1$p_values
+```
+
+**This examples shows how to store pieces of the RegressionList_Example function from a single linear model into a list. For multiple models, you can then store multiple list results into a single list. Note that you could extend this example to perform additional analyses or comparisons based on the stored results in the models_list list.**
+
