@@ -1,13 +1,16 @@
 Project 2 Review Blog:
 ================
 Michael Bradshaw
-2023-07-08
+2023-07-09
 
 ### What would you do differently?
 
 I think I was too focused about automating the code and should have
 waiting longer to finish all the modeling before proceeding with
 automation, as the instructions specified.
+
+I also would have coordinated with my partner earlier to better learn
+his schedule and capabilities.
 
 ### What was the most difficult part for you?
 
@@ -17,11 +20,11 @@ struggled with. In particular making sure the paramaters were correct.
 It took me some time to troubleshoot and make sure everything was
 working as intended
 
-Additionally, I kept thinking I was doing something wrong becuase I was
+Additionally, I kept thinking I was doing something wrong because I was
 expecting the models to do a better job at modeling the shares variable.
 It took me awhile to convince myself that the predictors are simply
 fairly weak at predicting shares. I thought the tree models would be
-significantly better than they were.
+significantly better, but that didn’t appear to be the case.
 
 ### What are your big take-aways from this project?
 
