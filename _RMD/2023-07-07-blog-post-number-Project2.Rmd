@@ -22,7 +22,7 @@ rmarkdown::render(
 I think I was too focused about automating the code and should have waiting longer to finish all the modeling before proceeding with automation, as the instructions specified.
 
 ### What was the most difficult part for you?
-The automation part was tricky for me. The notes were helpful, but making sure the render code linked to the .RMD file was the part I struggled with. In particular making sure the paramaters were correct.It took me some time to troubleshoot and make sure everything was working as intended
+The automation part was tricky for me. The notes were helpful, but making sure the render code linked to the .RMD file was the part I struggled with. In particular making sure the paramaters were correct. It took me some time to troubleshoot and make sure everything was working as intended
 
 Additionally, I kept thinking I was doing something wrong becuase I was expecting the models to do a better job at modeling the shares variable. It took me awhile to convince myself that the predictors are simply fairly weak at predicting shares. I thought the tree models would be significantly better than they were. 
 

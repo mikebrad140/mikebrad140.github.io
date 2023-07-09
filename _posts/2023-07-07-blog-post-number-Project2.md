@@ -13,9 +13,9 @@ automation, as the instructions specified.
 
 The automation part was tricky for me. The notes were helpful, but
 making sure the render code linked to the .RMD file was the part I
-struggled with. In particular making sure the paramaters were correct.It
-took me some time to troubleshoot and make sure everything was working
-as intended
+struggled with. In particular making sure the paramaters were correct.
+It took me some time to troubleshoot and make sure everything was
+working as intended
 
 Additionally, I kept thinking I was doing something wrong becuase I was
 expecting the models to do a better job at modeling the shares variable.
