@@ -1,19 +1,20 @@
 Blog 4: Reflections on Machine Learning
 ================
 Michael Bradshaw
-2023-07-13
+2023-07-14
 
 ## Machine Learning Methods: Random Forest
 
-One modeling technique that I had heard of but didn’t know much about
-was the Random Forest algorithm. Random Forest is an ensemble learning
-technique that uses decision tress (similar to a flow chart) to make
-predictions. The idea is to construct an ensemble of decision trees by
-training each tree on a random subset of the data and a random subset of
-the predictors. Each individual tree independently make predictions, but
-the final prediction is determined by aggregating the results. Random
-Forest techniques are beneficial because they can handle a large number
-of predictors, and they are able to handle non-linear relationships and
+The Random Forest algorithm was a modeling technique that I had heard of
+but had limited knowledge about. After watching the lectures, I now
+understand that Random Forest is an ensemble learning technique that
+uses decision tress (similar to a flow chart) to make predictions. The
+idea is to construct an ensemble of decision trees by training each tree
+on a random subset of the data and a random subset of the predictors.
+Each individual tree independently make predictions, but the final
+prediction is determined by aggregating the results. Random Forest
+techniques are beneficial because they can handle a large number of
+predictors, and they are able to handle non-linear relationships and
 interactions between variables.
 
 ## Example Random Forest Model:
@@ -21,7 +22,19 @@ interactions between variables.
 ``` r
 # Load the caret package
 library(caret)
+```
 
+    ## Warning: package 'caret' was built under R version 4.2.3
+
+    ## Loading required package: ggplot2
+
+    ## Warning: package 'ggplot2' was built under R version 4.2.3
+
+    ## Loading required package: lattice
+
+    ## Warning: package 'lattice' was built under R version 4.2.3
+
+``` r
 # built in iris dataset
 data(iris)
 
@@ -52,6 +65,7 @@ Accuracy
 
 ## Summary:
 
-The Random Forest model trained on the iris dataset achieved an accuracy
-of 0.9333 on the test data. The model accurately predicted the species
-of the iris flowers in the test set around 93.33% of the time.
+In this example, the Random Forest model was trained on the iris dataset
+and achieved an accuracy of 0.9333 on the test data. AS such, the model
+accurately predicted the species of the iris flowers in the test set
+93.33% of the time.
