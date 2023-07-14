@@ -3,9 +3,9 @@ Blog 4: Reflections on Machine Learning
 Michael Bradshaw
 2023-07-13
 
-## Machine Learning Methods:
+## Machine Learning Methods: Random Forest
 
-One modeling technique that I had heard about but didn’t know much about
+One modeling technique that I had heard of but didn’t know much about
 was the Random Forest algorithm. Random Forest is an ensemble learning
 technique that uses decision tress (similar to a flow chart) to make
 predictions. The idea is to construct an ensemble of decision trees by
@@ -15,6 +15,8 @@ the final prediction is determined by aggregating the results. Random
 Forest techniques are beneficial because they can handle a large number
 of predictors, and they are able to handle non-linear relationships and
 interactions between variables.
+
+## Example Random Forest Model:
 
 ``` r
 # Load the caret package
@@ -48,6 +50,8 @@ Accuracy
     ##  Accuracy 
     ## 0.9333333
 
-We just finished our section on machine learning (woot). What method did
-you find most interesting? Write a little about the method, fit the
-model on some data, and provide any relevant output.
+## Summary:
+
+The Random Forest model trained on the iris dataset achieved an accuracy
+of 0.9333 on the test data. The model accurately predicted the species
+of the iris flowers in the test set around 93.33% of the time.
