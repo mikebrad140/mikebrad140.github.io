@@ -54,7 +54,7 @@ adapt to different project requirements.
     selection techniques. This will help with exploring different
     algorithms to find the best model.
 
-## what areas of statistics/data science are you thinking about exploring further?
+## Areas of statistics and data science to explore further:
 
 Two areas come to mind: 1) there are many instances where we have large
 amounts of text to analyze and process so learning natural language
